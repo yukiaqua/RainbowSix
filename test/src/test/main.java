@@ -14,15 +14,31 @@ public class book {
 	public int C(){
 		return code;
 	}
+
+	public String A_r(String a){
+		bookname = a;
+	}
+
+	public int B_r(int b){
+		cost = b;
+	}
+
+	public int C_r(int c){
+		code = c;
+	}
 }
 
 public class Main {
 	public static void main(String[] args) {
 	book Book = new book();
 
-    System.out.println(Book.A());
-    System.out.println(Book.B());
-    System.out.println(Book.C());
+	Book.A_r = "祖国は我等の為に";
+	Book.B_r = 648;
+	Book.C_r = 1891;
+
+    System.out.println(Book.A_r());
+    System.out.println(Book.B_r());
+    System.out.println(Book.C_r());
 
 	}
 }
